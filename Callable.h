@@ -596,7 +596,7 @@ public:
 		return m_Invokers[ a_Index ];
 	}
 
-	void operator ()( const Args&... a_Args... ) const
+	void operator ()( const Args&... a_Args ) const
 	{
 		for ( auto iterInvokers = m_Invokers.begin(); iterInvokers != m_Invokers.end(); ++iterInvokers )
 		{
@@ -809,7 +809,7 @@ public:
 		return m_Invokers[ a_Index ];
 	}
 
-	void operator ()( const Args&... a_Args... ) const
+	void operator ()( const Args&... a_Args ) const
 	{
 		for ( auto iterInvokers = m_Invokers.begin(); iterInvokers != m_Invokers.end(); ++iterInvokers )
 		{
